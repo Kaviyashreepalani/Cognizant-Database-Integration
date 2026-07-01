@@ -34,3 +34,7 @@ class DepartmentResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+class EnrollmentCreate(BaseModel):
+    student_id: int
+    course_id: int
